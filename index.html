@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPi Electronics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <i class="fas fa-microchip"></i>
+        <span>EPI Electronics</span>
+      </div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+      <p>Chargement...</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo"> <a href="#home" class="brand">EPI Electronics</a></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#products">Produits</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i>
+        <span>Leader en solutions électroniques</span>
+      </div>
+      <h2>Bienvenue chez Epi Electronics</h2>
+      <p>Découvrez nos solutions électroniques modernes et innovantes pour tous vos besoins technologiques. Nous transformons vos idées en réalité numérique.</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary">
+          <i class="fas fa-arrow-right"></i>
+          Découvrir nos produits
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-phone"></i>
+          Nous contacter
+        </a>
+      </div>
+    </div>
+    
+
+
+    <div class="hero-scroll">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+<div class="section-divider"></div>
+
+  <!-- Produits -->
+  <section class="products" id="products">
+    <canvas class="bubbles-canvas" id="bubblesProducts"></canvas>
+    <h2>Nos Produits</h2>
+    <div class="cards">
+      <div class="card" onclick="showProduct('composants')">
+        <h3>Equipements Electroniques</h3>
+        <p>Claviers d'ordinateurs, souris, etc... </p>
+      </div>
+      <div class="card" onclick="showProduct('robots')">
+        <h3>Equipements de bureau</h3>
+        <p>Imprimantes, Projecteurs, etc... </p>
+      </div>
+      <div class="card" onclick="showProduct('ordinateurs')">
+        <h3>ordinateurs</h3>
+        <p>Connectez vos appareils au futur.</p>
+      </div>
+    </div>
+    <div class="product-details" id="product-details">  
+      <p>👉 Cliquez sur un produit pour voir plus de détails.</p>
+    </div>
+  </section>
+<div class="section-divider"></div>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <canvas class="bubbles-canvas" id="bubblesServices"></canvas>
+    <h2>Nos Services</h2>
+    <div class="service-container">
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Conseil">
+        <h3>Conseil & Expertise</h3>
+        <p>Nous vous accompagnons dans le choix et l’intégration des meilleures solutions électroniques.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3094/3094850.png" alt="Maintenance">
+        <h3>Maintenance</h3>
+        <p>Un suivi technique et une maintenance proactive pour garantir la performance de vos équipements.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1903/1903162.png" alt="Formation">
+        <h3>ventes</h3>
+        <p>Pour tous vos besion techniques ou technologiques pour de grandes entreprises ou pour usages personnel Contactez-nous!.</p>
+      </div>
+    </div>
+  </section>
+<div class="section-divider"></div>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Un projet ou une question ? Nous sommes à votre écoute.</p>
+    <div class="contact-container">
+      <div class="contact-card">
+        <h3>📞 Téléphone</h3>
+    <p>Appelez-nous directement</p>
+    <a href="tel:+25767186158" class="btn-contact">📲 +257 67 18 61 58</a>
+      </div>
+      <div class="contact-card">
+        <h3>✉️ Email</h3>
+    <p>Envoyez-nous un message </p>
+    <a href="mailto:info@epielectronics.com" class="btn-contact">info@epielectronics.com</a>
+      </div>
+      <div class="contact-card">
+        <h3>🗺️ Localisation</h3>
+    <p>Nous trouver facilement : 🗺️</p>
+    <a href="https://maps.app.goo.gl/MK9pkhrbo6zKh7Qr9" target="_blank" class="btn-contact">🗺️ Voir sur Google Maps</a>
+      </div>
+    </div>
+  </section>
+<div class="section-divider"></div>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <canvas class="bubbles-canvas" id="bubblesTestimonials"></canvas>
+    <h2>Témoignages Clients</h2>
+    <p>Découvrez ce que nos clients disent de nos services</p>
+    <div class="testimonials-container">
+      <div class="testimonial-card active">
+        <div class="testimonial-content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Service exceptionnel ! Epi Electronics a transformé notre infrastructure informatique. Leur expertise et leur réactivité sont remarquables."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Marie Dubois</h4>
+              <span>Directrice IT, TechCorp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Maintenance professionnelle et conseils précieux. Notre équipement fonctionne parfaitement depuis 2 ans grâce à leur suivi."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Jean Martin</h4>
+              <span>Gérant, BureauPlus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Formation excellente ! L'équipe nous a appris à maîtriser nos nouveaux systèmes. Très pédagogues et patients."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Sophie Laurent</h4>
+              <span>Responsable Formation, EduTech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-nav">
+      <button class="nav-dot active" data-slide="0"></button>
+      <button class="nav-dot" data-slide="1"></button>
+      <button class="nav-dot" data-slide="2"></button>
+    </div>
+  </section>
+<div class="section-divider"></div>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h2>Restez informé</h2>
+        <p>Recevez nos dernières actualités et offres spéciales directement dans votre boîte mail</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="form-group">
+            <input type="email" id="newsletterEmail" placeholder="Votre adresse email" required>
+            <button type="submit" class="newsletter-btn">
+              <i class="fas fa-paper-plane"></i>
+              S'abonner
+            </button>
+          </div>
+          <div class="newsletter-success" id="newsletterSuccess" style="display: none;">
+            <i class="fas fa-check-circle"></i>
+            Merci ! Vous êtes maintenant abonné à notre newsletter.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>EPI Electronics</h3>
+       <div class="social-icons">
+         <a href="https://wa.me/72013010" target="_blank"><img src="assets/img/wtsp.png" alt="WhatsApp"></a>
+        <a href="https://www.facebook.com/epielectronics" target="_blank"><img src="assets/img/fb1.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/epielectronics" target="_blank"><img src="assets/img/ig.svg" alt="Instagram"></a>
+       </div>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li>Reparation d'ordinateurs</li>
+          <li>Services Electroniques</li>
+          <li>Recuperations des donnees</li>
+          <li>Diagnostiques</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Telephone: (+257) 71 98 79 35</p>
+        <p>Email:<a href="mailto:info@epielectronics.com">info@epielectronics.com</a></p>
+        <p>Adresse : 123 Electronics Ave, Tech city, TC 12345 </p>
+      </div>  
+     <div class="footer-section">
+        <h3>Horaires</h3>
+        <p>Lun - Ven:8h -19h</p>
+        <p>Samedi:10h -18h</p>
+        <p>Dimanche:12h -17h</p>
+      </div>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
