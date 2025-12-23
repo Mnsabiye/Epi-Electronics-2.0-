@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--ink: #1d1d1f;
+	--offwhite: #f5f5f7;
+	--appleBlue: #0066cc;
+}
+
+html, body, #root {
+	height: 100%;
+}
+
+/* Apple-like smoothness */
+* {
+	scroll-behavior: smooth;
+}
+
+/* Bigger default text for airy feel */
+body {
+	@apply bg-offwhite text-ink font-sans tracking-tight;
+}
+
+/* Reusable utility for max width and generous spacing */
+.container-xl {
+	@apply max-w-screen-2xl mx-auto px-6 md:px-10;
+}
+
+.btn-primary {
+	@apply inline-flex items-center gap-2 rounded-full bg-ink text-offwhite px-6 py-3 text-sm md:text-base font-medium hover:opacity-90 transition;
+}
+
+.btn-outline {
+	@apply inline-flex items-center gap-2 rounded-full border border-ink text-ink px-6 py-3 text-sm md:text-base hover:bg-ink hover:text-offwhite transition;
+}
+
+.timeline-scroll {
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	scroll-padding-inline: 3rem;
+	-webkit-overflow-scrolling: touch;
+}
+
+.timeline-scroll::-webkit-scrollbar {
+	display: none;
+}
+
+.timeline-scroll {
+	scrollbar-width: none;
+}
+
+.timeline-card {
+	scroll-snap-align: center;
+}
+
+.scrollbar-hide {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}
+
+
