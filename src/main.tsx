@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Navigate, createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Navigate, createHashRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App'
 import Home from './pages/Home'
@@ -14,7 +14,7 @@ import ArchiveSection from './pages/ArchiveSection'
 import ArtistDetail from './pages/ArtistDetail'
 import ArtistPortal from './pages/ArtistPortal'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/',
 		element: <App />,
